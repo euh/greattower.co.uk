@@ -1,0 +1,364 @@
+@font-face {font-family: 'Cormorant Garamond'; 
+	src: url('fonts/CormorantGaramond-Medium.eot'); 
+	src: local('Cormorant Garamond Medium'), url('fonts/CormorantGaramond-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/CormorantGaramond-Medium.woff2') format('woff2'), url('fonts/CormorantGaramond-Medium.woff') format('woff');
+  font-weight:500;
+  font-style: normal;
+  }
+@font-face {font-family: 'Cormorant Garamond'; 
+	src: url('fonts/CormorantGaramond-MediumItalic.eot'); 
+	src: local('Cormorant Garamond Medium Italic'), url('fonts/CormorantGaramond-MediumItalic.eot?#iefix') format('embedded-opentype'), url('fonts/CormorantGaramond-MediumItalic.woff2') format('woff2'), url('fonts/CormorantGaramond-MediumItalic.woff') format('woff');
+  font-weight:500;
+  font-style: italic;
+  }
+@font-face {font-family: 'Cormorant Garamond'; 
+	src: url('fonts/CormorantGaramond-Bold.eot'); 
+	src: local('Cormorant Garamond Bold'), url('fonts/CormorantGaramond-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/CormorantGaramond-Bold.woff2') format('woff2'), url('fonts/CormorantGaramond-Bold.woff') format('woff');
+  font-weight:700;
+  font-style: normal;
+  }
+
+/*
+
+Alexis Brisset
+http://alexisbrisset.com/
+a@alexisbrisset.com
+
+*/
+
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, main {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.lazy {
+display: none;
+}
+
+/* structure */
+
+main {
+width: 944px;
+margin: 0 auto;
+}
+
+.picture, .description {
+float: left;
+/*box-shadow: 0 1px 2px #252323;*/
+}
+
+.picture {
+height: 600px;
+width: 435px;
+background: #fff;
+text-align: center;
+margin-right: 10px;
+padding: 10px;
+border: 6px solid #252323;
+}
+
+.description {
+width: 435px;
+height: 600px;
+padding: 10px;
+color: #000;
+border: 6px solid #252323;
+position: relative;
+}
+
+.description:before {
+position: absolute;
+width: 435px;
+height: 600px;
+content: '';  
+left: 6px; 
+top: 6px; 
+border: 4px solid #252323;
+z-index: -1;
+background: #fff;
+}
+
+#towers-list {
+margin-top: 4em;
+}
+
+li {
+margin: 60px 0;
+}
+
+li:first-child {
+padding-top: 35px;
+}
+
+li:last-child {
+border: none;
+margin: 0;
+}
+
+li:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+
+body {
+background: #f1f1f1;
+font-size: 100%;
+line-height: 1.6;
+font-family: "Cormorant Garamond", TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+font-weight: 500;
+color: #000;
+}
+
+/* header */
+
+header {
+background: #fff;
+background: rgba(255,255,255,1);
+position: fixed;
+top: 0;
+width: 100%;
+padding: 1.2em 0;
+z-index: 99;
+font-weight: 400;
+font-size: 0.6em;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+header h1, .dp {
+display: inline;
+}
+
+.dp {
+float: right;
+}
+
+.head {
+clear: right;
+width: 900px;
+margin: 0 auto;
+}
+
+/* footer */
+
+footer {
+background: #fff;
+top: 0;
+width: 100%;
+padding: 1.2em 0;
+z-index: 99;
+font-weight: 400;
+font-size: 0.6em;
+letter-spacing: 1px;
+text-align: center;
+}
+
+footer p {
+color: #000;
+width: 950px;
+margin: 0 auto;
+}
+
+/* typo */
+
+header, footer {
+font-family: Verdana, Geneva, sans-serif;
+}
+
+a {
+color: #000;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+main a {
+color: #000;
+text-decoration: underline;
+}
+
+main a:hover {
+text-decoration: none;
+}
+
+.number {
+font-size: 5em;
+text-align: center;
+margin-top: .3em;
+letter-spacing: .06em;
+}
+
+.number, h2 {
+font-weight: 700;
+}
+
+.separator, .separator2 {
+line-height: 0;
+margin: 0 auto;
+width: 150px;
+}
+
+.separator {
+border-bottom: 9px solid #000;
+margin-bottom: 2em;
+}
+
+.separator2 {
+border-bottom: 1px solid #000;
+margin: 2em auto;
+}
+
+.description p {
+font-size: 1.2em;
+display: block;
+margin: 0 1em;
+text-align: center;
+}
+
+strong {
+font-weight: 700;
+}
+
+i {
+font-style: italic;
+}
+
+main i {
+font-style: style;
+}
+
+small {
+font-size: .8em;
+font-variant: small-caps;
+}
+
+address small {
+font-variant: normal;
+font-size: 0.6em;
+font-style: italic;
+}
+
+address {
+text-align: center;
+letter-spacing: 0.15em;
+font-size: 1.35em;
+padding: 0 2px;
+}
+
+.description a.btt {
+text-align: right;
+display: block;
+margin: 1.5em 1em 0 0;;
+}
+
+header span, footer span {
+color: #000;
+padding: 0 .2em;
+}
+
+::selection {
+background: #f5ff87;
+}
+
+::-moz-selection {
+background: #f5ff87;
+}
+
+/* hache */
+
+h1 {
+padding: 0.9em 0 0;
+
+}
+
+h3 {
+text-align: center;
+font-size: 2em;
+margin-bottom: 1em;
+text-transform: uppercase;
+font-weight: 700;
+letter-spacing: .1em;
+}
+
+h2 {
+font-size: 2em;
+text-align: center;
+line-height: 1.5;
+letter-spacing: 0.05em;
+margin: 0.5em 0;
+padding: 0 2px;
+}
+
+/* intro outro */
+
+.intro {
+padding: 7.5em 0 3.2em;
+}
+
+figure {
+text-align: center;
+margin-bottom: 3em;
+}
+
+.intro p {
+width: 800px;
+margin: 0 auto;
+font-size: 1.35em;
+text-indent: 2.5em;
+}
+
+.outro {
+padding: .4em 0 3em;
+font-size: 1.5em;
+border: none;
+text-align: center;
+}
+
+.colophon {
+text-align: center;
+display: block;
+font-size: 1.1em;
+margin: 1em 0 0;
+}

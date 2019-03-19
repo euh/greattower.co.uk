@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Great Tower for London</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Alexis Brisset">
+		<meta name="description" content="The 68 designs submitted to the contest: Great Tower for London 1890">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+<body id="index">
+<main>
+	<div id="intro-container">
+			
+	
+			<figure>
+				<img src="img/tower.jpg" alt="Great Tower for London" title="Great Tower for London" />
+			</figure>
+			
+			<div class="clearfix">
+				<div class="text">
+					<h1>Great Tower for London</h1>
+					<p>In 1889, inspired by the construction of the Eiffel Tower in Paris, France, Sir Edward Watkin <i>(a British Member of Parliament and chairman of the Metropolitan Railway)</i> proposed the construction of a taller tower in Wembley Park, London. An architectural competition was held in 1890, and numerous designs were submitted <a href="http://en.wikipedia.org/wiki/Watkin%27s_Tower">(Wikipedia)</a>. The numbers attached to the designs are consecutive, and simply indicate the order in which they were examined by the Judges, without any reference to their respective merits. <b>Number 37 won</b>.</p>
+				</div>
+				<div class="selection">
+					<h3>For the best experience, choose your layout:</h3>
+					<a href="list.html" title="List Layout"><b>List Layout</b>, if you have 5 minutes and if you're not on a mobile phone.</a>
+					<a href="image.html" title="Image Layout"><b>Image Layout</b>, if you have 1 minute.</a>
+				</div>
+			</div>
+			<p class="colophon">These illustrations and datas are part of a catalog <i>"Great Tower for London (1890)"</i>.</p>
+			
+	
+	</div>
+</main>
+<script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.selection a').hover(
+        function()
+        {
+            $('img').attr('src', 'img/tower.gif');
+        },
+        function()
+        {
+            $('img').attr('src', 'img/tower.jpg');
+        });
+});
+</script>
+</body>
+</html>

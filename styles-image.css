@@ -1,0 +1,344 @@
+@font-face {font-family: 'Cormorant Garamond'; 
+	src: url('fonts/CormorantGaramond-Medium.eot'); 
+	src: local('Cormorant Garamond Medium'), url('fonts/CormorantGaramond-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/CormorantGaramond-Medium.woff2') format('woff2'), url('fonts/CormorantGaramond-Medium.woff') format('woff');
+  font-weight:500;
+  font-style: normal;
+  }
+@font-face {font-family: 'Cormorant Garamond'; 
+	src: url('fonts/CormorantGaramond-MediumItalic.eot'); 
+	src: local('Cormorant Garamond Medium Italic'), url('fonts/CormorantGaramond-MediumItalic.eot?#iefix') format('embedded-opentype'), url('fonts/CormorantGaramond-MediumItalic.woff2') format('woff2'), url('fonts/CormorantGaramond-MediumItalic.woff') format('woff');
+  font-weight:500;
+  font-style: italic;
+  }
+@font-face {font-family: 'Cormorant Garamond'; 
+	src: url('fonts/CormorantGaramond-Bold.eot'); 
+	src: local('Cormorant Garamond Bold'), url('fonts/CormorantGaramond-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/CormorantGaramond-Bold.woff2') format('woff2'), url('fonts/CormorantGaramond-Bold.woff') format('woff');
+  font-weight:700;
+  font-style: normal;
+  }
+/*
+
+Alexis Brisset
+http://alexisbrisset.com/
+a@alexisbrisset.com
+
+*/
+
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, main {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.lazy {
+display: none;
+}
+
+/* structure */
+
+main {
+margin: 4.5em auto;
+text-align: center;
+width: 96%;
+line-height: 0;
+}
+
+li {
+width: 315px;
+height: 485px;
+margin: 5px;
+line-height: 1.7;
+display: inline-block;
+position: relative;
+background: #fff;
+overflow: hidden;
+cursor: hand; 
+cursor: pointer;
+/*box-shadow: 0 1px 2px #252323;*/
+border: 6px solid #252323;
+-webkit-transition: border-color 0.6s ease-out;
+-moz-transition: border-color 0.6s ease-out;
+-o-transition: border-color 0.6s ease-out;
+-ms-transition: border-color 0.6s ease-out;
+transition: border-color 0.6s ease-out;
+}
+
+li:hover {
+    border-color: transparent;
+}
+
+li img {
+line-height: 0;
+}
+
+.desc {
+display: block;
+position: absolute;
+left: 6px;
+height: 455px;
+width: 285px;
+bottom: -473px;
+background: #fff;
+border: 4px solid #252323;
+padding: 5px;
+}
+
+body {
+background: #f1f1f1;
+font-size: 100%;
+line-height: 1.6;
+font-family: "Cormorant Garamond", TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+font-weight: 500;
+color: #000;
+}
+
+/* header */
+
+header {
+background: #fff;
+background: rgba(255,255,255,1);
+width: 100%;
+padding: 1.2em 0;
+font-weight: 400;
+font-size: 0.6em;
+letter-spacing: 0.01em;
+position: absolute;
+top: 0;
+left: 0;
+letter-spacing: 2px;
+text-align: center;
+text-transform: uppercase;
+}
+
+header nav, h1 {
+display: inline;
+}
+
+header nav {
+float: right;
+}
+
+.head {
+clear: right;
+max-width: 950px;
+padding: 0 1em;
+margin: 0 auto;
+}
+
+/* footer */
+
+footer {
+background: #fff;
+top: 0;
+width: 100%;
+padding: 1.2em 0;
+z-index: 99;
+font-weight: 400;
+font-size: 0.6em;
+letter-spacing: 1px;
+text-align: center;
+color: #000;
+}
+
+/* typo */
+
+header, footer {
+font-family: Verdana, Geneva, sans-serif;
+}
+
+a {
+color: #000;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+main a {
+color: #000;
+text-decoration: underline;
+}
+
+main a:hover {
+text-decoration: none;
+}
+
+.number {
+position: absolute;
+top: 0;
+right: 12px;
+font-size: 2em;
+text-align: center;
+letter-spacing: .05em;
+}
+
+.number, h2 {
+font-weight: 700;
+}
+
+.separator2 {
+line-height: 0;
+margin: 0 auto;
+width: 150px;
+border-bottom: 1px solid #000;
+margin: 2em auto;
+}
+
+.desc p {
+font-size: 1.15em;
+margin: .2em;
+text-align: left;
+}
+
+strong {
+font-weight: 700;
+}
+
+i {
+font-style: italic;
+}
+
+main i {
+font-style: italic;
+}
+
+small {
+font-size: .8em;
+font-variant: small-caps;
+}
+
+address small {
+font-variant: normal;
+font-size: 0.6em;
+font-style: italic;
+}
+
+address {
+text-align: center;
+letter-spacing: 0.1em;
+font-size: 1.25em;
+}
+
+header span, footer span {
+color: #000;
+padding: 0 .2em;
+}
+
+::selection {
+background: #f5ff87;
+}
+
+::-moz-selection {
+background: #f5ff87;
+}
+
+/* hache */
+
+h1 {
+padding: 0.9em 0 0;
+}
+
+h2 {
+text-align: center;
+font-size: 1.75em;
+margin: 1em 0 .5em;
+}
+
+h3 {
+text-align: center;
+font-size: 2em;
+margin-bottom: 1em;
+text-transform: uppercase;
+font-weight: 700;
+letter-spacing: .1em;
+}
+
+/* intro outro */
+
+.intro, .outro {
+max-width: 800px;
+line-height: 1.7;
+text-align: left;
+margin: 0 auto 3.5em;
+}
+
+.intro {
+padding: 3.5em 0 0;
+}
+
+.outro {
+margin: 4em auto 4em;
+text-align: center;
+font-size: 1.5em;
+}
+
+figure {
+text-align: center;
+margin-bottom: 3em;
+}
+
+.intro p {
+font-size: 1.35em;
+text-indent: 2.5em;
+}
+
+.colophon {
+text-align: center;
+display: block;
+font-size: 1.1em;
+margin: 1em 0 0;
+}
+
+@media only screen and (min-width: 320px) {
+
+.intro {
+font-size: 0.8em;
+}
+
+}
+
+@media only screen and (min-width: 850px) {
+
+.intro {
+font-size: 1em;
+}
+
+}
